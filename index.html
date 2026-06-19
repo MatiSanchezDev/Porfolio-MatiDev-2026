@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matias Nahuel Sanchez — Fullstack Developer + AI Engineer</title>
+<style>html,body{margin:0;background:#161210;}</style>
+<script src="./support.js"></script>
+</head>
+<body style="background:#161210;">
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --paper:#efe8da; --paper2:#e6dccb; --ink:#161210; --ink2:#2a231e;
+    --red:#e84e36; --red2:#c93c26; --mute:#857b6c;
+    --imgf:grayscale(1) contrast(1.06) brightness(.98);
+  }
+  html{scroll-behavior:smooth;background:var(--paper);}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Archivo',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  ::selection{background:var(--red);color:#fff;}
+  a{color:inherit;text-decoration:none;}
+  @keyframes marq{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  @keyframes revealIn{from{transform:translateY(24px);}to{transform:none;}}
+  [data-reveal]{animation:revealIn .7s cubic-bezier(.2,.8,.2,1) both;}
+  @media (max-width:860px){
+    [data-col2]{grid-template-columns:1fr!important;gap:30px!important;}
+  }
+  @media (max-width:560px){
+    nav{flex-wrap:wrap!important;gap:6px 4px!important;padding:10px 16px!important;}
+    [data-hero]{font-size:clamp(46px,17vw,82px)!important;}
+    [data-contact]{flex-wrap:wrap!important;align-items:flex-start!important;}
+    [data-cval]{font-size:23px!important;word-break:break-word;}
+  }
+</style>
+</helmet>
+
+<div ref="{{ rootRef }}" style="background:var(--paper);">
+
+  <template id="__bundler_thumbnail">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100" height="100" fill="#161210"/>
+      <text x="50" y="44" font-family="Arial Black, sans-serif" font-size="30" font-weight="900" fill="#efe8da" text-anchor="middle">MS</text>
+      <text x="50" y="66" font-family="monospace" font-size="9" fill="#e84e36" text-anchor="middle" letter-spacing="1">FULLSTACK</text>
+      <rect x="30" y="74" width="40" height="3" fill="#e84e36"/>
+    </svg>
+  </template>
+
+  <!-- ===== NAV ===== -->
+  <nav style="position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:13px 26px;background:var(--paper);border-bottom:1.5px solid var(--ink);">
+    <a href="#top" style="font-family:'Space Mono',monospace;font-weight:700;font-size:12px;letter-spacing:1px;">M.SANCHEZ©</a>
+    <div style="display:none;"></div>
+    <div style="display:flex;gap:4px;flex-wrap:wrap;align-items:center;">
+      <a href="#perfil" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--ink);padding:5px 10px;" style-hover="color:var(--red);">PERFIL</a>
+      <a href="#stack" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--ink);padding:5px 10px;" style-hover="color:var(--red);">STACK</a>
+      <a href="#proyectos" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--ink);padding:5px 10px;" style-hover="color:var(--red);">PROYECTOS</a>
+      <a href="CV-Matias-Sanchez.html" target="_blank" rel="noopener" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--ink);padding:5px 10px;" style-hover="color:var(--red);">CV ↗</a>
+      <a href="#contacto" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1px;color:#fff;background:var(--red);padding:6px 13px;" style-hover="background:var(--ink);">CONTACTO ↗</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO (black cover) ===== -->
+  <section id="top" style="background:var(--ink);color:var(--paper);padding:30px 26px 26px;min-height:90vh;display:flex;flex-direction:column;justify-content:space-between;">
+    <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1px;color:#bcae9a;border-bottom:1px solid #4a4038;padding-bottom:14px;">
+      <span>PORTFOLIO / FULLSTACK + AI</span>
+      <span style="color:var(--red);">● DISPONIBLE PARA PROYECTOS</span>
+      <span>EST. 2021 — CORRIENTES, AR</span>
+    </div>
+
+    <div data-reveal style="padding:30px 0;">
+      <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(13px,1.8vw,17px);letter-spacing:5px;color:var(--red);margin-bottom:6px;">DESARROLLADOR · AI ENGINEER</div>
+      <h1 data-hero style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(64px,15.5vw,230px);line-height:.8;letter-spacing:-1px;text-transform:uppercase;">FULLSTACK<br/>DEV<span style="color:var(--red);">.</span></h1>
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:18px;">
+        <span style="font-family:'Anton',sans-serif;font-size:clamp(20px,3.4vw,40px);letter-spacing:0;text-transform:uppercase;">Matias N. Sanchez</span>
+        <span style="font-family:'Space Mono',monospace;font-size:12px;color:#bcae9a;letter-spacing:1px;">// REACT · NEXT · NESTJS · NODE · AI ENGINEER</span>
+      </div>
+      <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="CV-Matias-Sanchez.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:1px;color:var(--ink);background:var(--paper);padding:13px 22px;border:1.5px solid var(--paper);" style-hover="background:var(--red);border-color:var(--red);color:#fff;">VER CV ONLINE ↗</a>
+        <a href="#contacto" style="display:inline-flex;align-items:center;gap:9px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:1px;color:var(--paper);background:transparent;padding:13px 22px;border:1.5px solid #4a4038;" style-hover="border-color:var(--red);color:var(--red);">CONTACTAR ↗</a>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1px;color:#bcae9a;border-top:1px solid #4a4038;padding-top:14px;">
+      <span>+5 AÑOS · AUTODIDACTA</span>
+      <span>2 PROYECTOS DE PRODUCCIÓN</span>
+      <span>↓ DESLIZÁ PARA VER EL CASO</span>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div style="background:var(--red);color:var(--ink);border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);overflow:hidden;padding:11px 0;">
+    <div style="display:inline-flex;white-space:nowrap;animation:marq 26s linear infinite;font-family:'Anton',sans-serif;font-size:24px;letter-spacing:1px;text-transform:uppercase;">
+      <span>React ✦ Next.js ✦ NestJS ✦ TypeScript ✦ Node ✦ Java ✦ Spring ✦ PostgreSQL ✦ Supabase ✦ Docker ✦ AI Engineer ✦ Prompt Eng. ✦ SDD ✦ TDD ✦ LLMs ✦&nbsp;</span>
+      <span>React ✦ Next.js ✦ NestJS ✦ TypeScript ✦ Node ✦ Java ✦ Spring ✦ PostgreSQL ✦ Supabase ✦ Docker ✦ AI Engineer ✦ Prompt Eng. ✦ SDD ✦ TDD ✦ LLMs ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ===== ÍNDICE ===== -->
+  <section data-col2 style="max-width:1240px;margin:0 auto;padding:64px 26px;display:grid;grid-template-columns:1.4fr .9fr;gap:40px;align-items:start;">
+    <div data-reveal>
+      <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--mute);margin-bottom:6px;">C-001 / NAVEGACIÓN</div>
+      <h2 style="font-family:'Anton',sans-serif;font-size:clamp(52px,9vw,118px);line-height:.82;text-transform:uppercase;letter-spacing:-1px;margin-bottom:26px;">Índice<span style="color:var(--red);">.</span></h2>
+      <div>
+        <sc-for list="{{ indexItems }}" as="it" hint-placeholder-count="6">
+          <a href="{{ it.href }}" style="display:flex;align-items:center;gap:18px;padding:15px 4px;border-top:1.5px solid var(--ink);" style-hover="background:var(--red);color:#fff;padding-left:14px;">
+            <span style="font-family:'Space Mono',monospace;font-size:13px;width:32px;">{{ it.n }}</span>
+            <span style="font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(18px,2.6vw,26px);text-transform:uppercase;letter-spacing:.3px;flex:1;">{{ it.t }}</span>
+            <span style="font-family:'Space Mono',monospace;font-size:11px;color:var(--mute);">{{ it.s }}</span>
+          </a>
+        </sc-for>
+        <div style="border-top:1.5px solid var(--ink);"></div>
+      </div>
+    </div>
+
+    <div data-reveal style="position:relative;">
+      <div style="border:1.5px solid var(--ink);background:var(--paper2);padding:8px;">
+        <img src="uploads/IMG_20250522_104016.jpg" alt="Matias Sanchez" style="width:100%;display:block;aspect-ratio:3/3.6;object-fit:cover;filter:var(--imgf);"/>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:1px;color:var(--mute);margin-top:8px;">
+        <span>FIG.01 — EL DEV</span><span>CORRIENTES</span>
+      </div>
+      <div style="position:absolute;top:-10px;right:-10px;background:var(--red);color:#fff;font-family:'Anton',sans-serif;font-size:15px;letter-spacing:1px;padding:7px 13px;transform:rotate(4deg);">+5 AÑOS</div>
+    </div>
+  </section>
+
+  <!-- ===== PERFIL ===== -->
+  <section id="perfil" style="border-top:1.5px solid var(--ink);background:var(--paper);">
+    <div style="max-width:1240px;margin:0 auto;padding:64px 26px;">
+      <div data-reveal style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:32px;">
+        <h2 style="font-family:'Anton',sans-serif;font-size:clamp(44px,8.5vw,128px);line-height:.82;text-transform:uppercase;letter-spacing:-1px;max-width:14ch;">De punta <span style="color:var(--red);">a punta.</span></h2>
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--mute);">C-002 / PERFIL</div>
+      </div>
+      <div data-col2 style="display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start;">
+        <div data-reveal>
+          <p style="font-size:19px;line-height:1.6;color:var(--ink2);max-width:52ch;">Desarrollador Frontend y Full Stack forjado en la autodisciplina: más de <b>5 años</b> por la senda autodidacta dominando React, Next.js, Node y TypeScript. Especialista en levantar aplicaciones de producción de principio a fin —e-commerce, sistemas de gestión y dashboards— con APIs RESTful en NestJS, Node y Java/Spring Boot.</p>
+          <p style="font-size:17px;line-height:1.6;color:var(--mute);max-width:52ch;margin-top:16px;">Como <b>AI Engineer</b> trabajo con LLMs (GPT-4, Claude), Prompt Engineering, desarrollo spec-driven (SDD), TDD y loop / harness engineering para acelerar el desarrollo sin ceder jamás el control de la arquitectura.</p>
+        </div>
+        <div data-reveal>
+          <sc-for list="{{ perfilPoints }}" as="p" hint-placeholder-count="4">
+            <div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #c9bfae;">
+              <span style="font-family:'Space Mono',monospace;font-size:13px;color:var(--red);">{{ p.n }}</span>
+              <div>
+                <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:.3px;">{{ p.t }}</div>
+                <div style="font-size:15px;color:var(--mute);">{{ p.d }}</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MANIFESTO (red) ===== -->
+  <section data-reveal style="background:var(--red);color:var(--ink);border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);">
+    <div style="max-width:1240px;margin:0 auto;padding:70px 26px;">
+      <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;margin-bottom:16px;">MANIFIESTO —</div>
+      <h2 style="font-family:'Anton',sans-serif;font-size:clamp(40px,7.6vw,118px);line-height:.86;text-transform:uppercase;letter-spacing:-1px;">Código que escala. Interfaces que convierten.</h2>
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:26px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:1px;border-top:1.5px solid var(--ink);padding-top:16px;">
+        <span>ESCALABILIDAD · RENDIMIENTO · UX</span>
+        <span>SSR · JWT · WEBSOCKETS · MVC</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STACK (the star) ===== -->
+  <section id="stack" style="background:var(--paper);">
+    <div style="max-width:1240px;margin:0 auto;padding:64px 26px;">
+      <div data-reveal style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:10px;">
+        <div>
+          <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--mute);margin-bottom:6px;">C-003 / ARSENAL TÉCNICO</div>
+          <h2 style="font-family:'Anton',sans-serif;font-size:clamp(52px,10vw,150px);line-height:.8;text-transform:uppercase;letter-spacing:-1px;">Stack<span style="color:var(--red);">.</span></h2>
+        </div>
+        <p style="font-size:16px;color:var(--mute);max-width:36ch;">El verdadero foco. Cuatro frentes de conocimiento afilados a lo largo de +500 horas de práctica.</p>
+      </div>
+
+      <div data-reveal style="margin-top:18px;">
+        <sc-for list="{{ stack }}" as="cat" hint-placeholder-count="4">
+          <div style="display:grid;grid-template-columns:64px 1fr;gap:20px;padding:26px 6px;border-top:1.5px solid var(--ink);" style-hover="background:var(--ink);color:var(--paper);padding-left:16px;padding-right:16px;">
+            <div style="font-family:'Anton',sans-serif;font-size:34px;color:var(--red);line-height:1;">{{ cat.n }}</div>
+            <div>
+              <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:12px;">
+                <h3 style="font-family:'Anton',sans-serif;font-size:clamp(26px,4.4vw,52px);text-transform:uppercase;letter-spacing:-.5px;line-height:.9;">{{ cat.cat }}</h3>
+                <span style="font-family:'Space Mono',monospace;font-size:12px;color:var(--mute);">{{ cat.fan }}</span>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                <sc-for list="{{ cat.tokens }}" as="tk" hint-placeholder-count="6">
+                  <span style="font-family:'Space Mono',monospace;font-size:13px;border:1.5px solid currentColor;padding:5px 11px;">{{ tk }}</span>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+        <div style="border-top:1.5px solid var(--ink);"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAPACIDADES (word stack) ===== -->
+  <section style="background:var(--ink);color:var(--paper);border-top:1.5px solid var(--ink);">
+    <div data-col2 style="max-width:1240px;margin:0 auto;padding:64px 26px;display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:center;">
+      <div data-reveal>
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:#bcae9a;margin-bottom:14px;">C-004 / CAPACIDADES</div>
+        <p style="font-size:18px;line-height:1.6;color:#cfc3b1;max-width:40ch;">No solo escribo código: diseño la arquitectura, modelo los datos, aseguro la API y pulo la experiencia. Una cabeza full-stack de punta a punta.</p>
+        <div style="margin-top:22px;border:1.5px solid #4a4038;padding:8px;width:170px;">
+          <img src="uploads/IMG_20250522_104016.jpg" alt="" style="width:100%;display:block;aspect-ratio:1/1;object-fit:cover;filter:var(--imgf);"/>
+        </div>
+      </div>
+      <div data-reveal style="display:flex;flex-direction:column;">
+        <sc-for list="{{ caps }}" as="c" hint-placeholder-count="7">
+          <span style="font-family:'Anton',sans-serif;font-size:clamp(30px,6vw,74px);line-height:.94;text-transform:uppercase;letter-spacing:-1px;color:{{ c.color }};transition:color .2s,transform .2s;" style-hover="color:var(--red);transform:translateX(14px);">{{ c.t }}</span>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS ===== -->
+  <section id="proyectos" style="background:var(--paper);">
+    <div style="max-width:1240px;margin:0 auto;padding:64px 26px;">
+      <div data-reveal style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:20px;">
+        <h2 style="font-family:'Anton',sans-serif;font-size:clamp(48px,9vw,138px);line-height:.8;text-transform:uppercase;letter-spacing:-1px;">Proyectos<span style="color:var(--red);">.</span></h2>
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--mute);">C-005 / PRODUCCIÓN</div>
+      </div>
+
+      <sc-for list="{{ projects }}" as="p" hint-placeholder-count="2">
+        <div data-reveal style="display:grid;grid-template-columns:64px 1fr;gap:20px;padding:28px 6px;border-top:1.5px solid var(--ink);">
+          <div style="font-family:'Anton',sans-serif;font-size:34px;color:var(--red);line-height:1;">{{ p.n }}</div>
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:8px;">
+              <h3 style="font-family:'Anton',sans-serif;font-size:clamp(28px,5vw,58px);text-transform:uppercase;letter-spacing:-.5px;line-height:.9;">{{ p.name }}</h3>
+              <span style="font-family:'Space Mono',monospace;font-size:12px;color:var(--mute);white-space:nowrap;">{{ p.period }}</span>
+            </div>
+            <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:.5px;color:var(--red2);margin-bottom:10px;">{{ p.kind }}</div>
+            <p style="font-size:16.5px;line-height:1.55;color:var(--ink2);max-width:70ch;margin-bottom:14px;">{{ p.note }}</p>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;">
+              <sc-for list="{{ p.tokens }}" as="tk" hint-placeholder-count="6">
+                <span style="font-family:'Space Mono',monospace;font-size:12px;background:var(--ink);color:var(--paper);padding:4px 10px;">{{ tk }}</span>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+
+      <!-- formación -->
+      <div data-reveal style="display:grid;grid-template-columns:64px 1fr;gap:20px;padding:24px 6px;border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);">
+        <div style="font-family:'Space Mono',monospace;font-size:13px;color:var(--red);">★</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;">
+          <div>
+            <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:19px;text-transform:uppercase;letter-spacing:.3px;">Formación autodidacta — Full Stack</div>
+            <div style="font-size:15px;color:var(--mute);max-width:60ch;">+500 horas: React, Next, Node, TypeScript, Java y Spring Boot. Docs oficiales, freeCodeCamp, Udemy y proyectos reales.</div>
+          </div>
+          <span style="font-family:'Space Mono',monospace;font-size:12px;color:var(--mute);">2021 — HOY</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section id="contacto" style="background:var(--ink);color:var(--paper);border-top:1.5px solid var(--ink);">
+    <div style="max-width:1240px;margin:0 auto;padding:70px 26px;">
+      <div data-reveal>
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--red);margin-bottom:10px;">C-006 / ¿ARRANCAMOS?</div>
+        <h2 style="font-family:'Anton',sans-serif;font-size:clamp(56px,13vw,200px);line-height:.8;text-transform:uppercase;letter-spacing:-2px;">Hablemos<span style="color:var(--red);">.</span></h2>
+      </div>
+      <div data-reveal style="margin-top:30px;">
+        <sc-for list="{{ contacts }}" as="c" hint-placeholder-count="4">
+          <a href="{{ c.href }}" target="_blank" rel="noopener noreferrer" data-contact style="display:flex;align-items:center;justify-content:space-between;gap:14px;padding:20px 4px;border-top:1px solid #4a4038;" style-hover="color:var(--red);padding-left:14px;">
+            <span style="display:flex;align-items:baseline;gap:16px;flex:1;min-width:0;">
+              <span style="font-family:'Space Mono',monospace;font-size:12px;color:#bcae9a;width:90px;flex:none;">{{ c.label }}</span>
+              <span data-cval style="font-family:'Anton',sans-serif;font-size:clamp(20px,3.6vw,40px);text-transform:uppercase;letter-spacing:-.5px;">{{ c.value }}</span>
+            </span>
+            <span style="font-family:'Space Mono',monospace;font-size:18px;">↗</span>
+          </a>
+        </sc-for>
+        <div style="border-top:1px solid #4a4038;"></div>
+      </div>
+    </div>
+    <div style="border-top:1.5px solid #4a4038;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:18px 26px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;color:#857b6c;">
+      <span>MATIAS NAHUEL SANCHEZ</span>
+      <span>FULLSTACK DEVELOPER</span>
+      <span>© MMXXVI — CORRIENTES, AR</span>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accentColor&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Coral&quot;,&quot;Rojo&quot;,&quot;Naranja&quot;,&quot;Magenta&quot;],&quot;default&quot;:&quot;Coral&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;bwPhotos&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  constructor(props){ super(props); this.rootRef = React.createRef(); }
+
+  applyTweaks(){
+    const el = this.rootRef.current; if(!el) return;
+    const map = { 'Coral':'#e84e36', 'Rojo':'#e2342a', 'Naranja':'#f06024', 'Magenta':'#e23b6a' };
+    const dark = { 'Coral':'#c93c26', 'Rojo':'#c2241c', 'Naranja':'#cf4d16', 'Magenta':'#c42a55' };
+    const a = this.props.accentColor ?? 'Coral';
+    el.style.setProperty('--red', map[a] || map.Coral);
+    el.style.setProperty('--red2', dark[a] || dark.Coral);
+    const bw = this.props.bwPhotos ?? true;
+    el.style.setProperty('--imgf', bw ? 'grayscale(1) contrast(1.06) brightness(.98)' : 'none');
+  }
+
+  componentDidMount(){ this.applyTweaks(); }
+  componentDidUpdate(){ this.applyTweaks(); }
+
+  renderVals(){
+    const ink='var(--paper)';
+    return {
+      rootRef: this.rootRef,
+      indexItems: [
+        { n:'01', t:'Perfil', s:'Quién soy', href:'#perfil' },
+        { n:'02', t:'Stack Técnico', s:'El arsenal', href:'#stack' },
+        { n:'03', t:'Capacidades', s:'Qué hago', href:'#stack' },
+        { n:'04', t:'Proyectos', s:'Producción', href:'#proyectos' },
+        { n:'05', t:'Formación', s:'+500 hs', href:'#proyectos' },
+        { n:'06', t:'Contacto', s:'Hablemos', href:'#contacto' }
+      ],
+      perfilPoints: [
+        { n:'01', t:'End-to-end', d:'E-commerce, gestión y dashboards de principio a fin.' },
+        { n:'02', t:'SSR / SSG / CSR', d:'Rendimiento y SEO con Next.js.' },
+        { n:'03', t:'APIs con NestJS', d:'NestJS · REST · JWT · WebSockets · Zod.' },
+        { n:'04', t:'Arquitectura MVC', d:'Escalable, mantenible y mobile-first.' }
+      ],
+      stack: [
+        { n:'01', cat:'Frontend', fan:'INTERFAZ', tokens:['React','Next.js','TypeScript','Tailwind','Redux','Zustand','HTML5/CSS3'] },
+        { n:'02', cat:'Backend', fan:'BASE · NESTJS', tokens:['NestJS','Node.js','Express','Java','Spring Boot','REST','JWT','WebSockets','Prisma','Zod'] },
+        { n:'03', cat:'AI Engineering', fan:'FUNDAMENTAL', tokens:['AI Engineer','LLMs (GPT-4 · Claude)','Prompt Engineering','SDD (Spec-Driven)','TDD','Loop Engineering','Harness Engineering'] },
+        { n:'04', cat:'Bases de Datos', fan:'DATOS', tokens:['PostgreSQL','MySQL','Supabase'] },
+        { n:'05', cat:'DevOps & Tooling', fan:'HERRAMIENTAS', tokens:['Git','Docker','Vercel','Postman'] }
+      ],
+      caps: [
+        { t:'Frontend', color:ink }, { t:'Backend', color:'var(--red)' }, { t:'AI Engineering', color:ink },
+        { t:'Databases', color:'var(--red)' }, { t:'DevOps', color:ink }, { t:'Arquitectura', color:'var(--red)' }, { t:'UI / UX', color:ink }
+      ],
+      projects: [
+        { n:'01', name:'Entregapet', kind:'Plataforma E-Commerce', period:'MAY 2024 — ENE 2025',
+          note:'E-commerce end-to-end con arquitectura MVC. Estado global con Redux Toolkit, pagos y pedidos en tiempo real vía WebSockets, autenticación por roles con JWT, geolocalización con Google Maps API y SSR para SEO y carga veloz.',
+          tokens:['Next.js','Node','Supabase','Redux','JWT','WebSockets','Google Maps'] },
+        { n:'02', name:'Stickeria', kind:'Sistema de Gestión de Pedidos', period:'MAY 2025 — OCT 2025',
+          note:'Plataforma full stack de gestión de pedidos con dashboard analítico (ventas, ingresos, egresos y balance mensual). API RESTful con Express + PostgreSQL y validación Zod, estado global con Zustand y UI mobile-first para despacho rápido.',
+          tokens:['Next.js','Express','PostgreSQL','Zustand','Zod','Tailwind'] }
+      ],
+      contacts: [
+        { label:'EMAIL', value:'sanchezmatidev@gmail.com', href:'mailto:sanchezmatidev@gmail.com' },
+        { label:'TELÉFONO', value:'+54 3774 440384', href:'tel:+543774440384' },
+        { label:'GITHUB', value:'MatiSanchezDev', href:'https://github.com/MatiSanchezDev' },
+        { label:'LINKEDIN', value:'in/ms-dev-web', href:'https://linkedin.com/in/ms-dev-web' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
